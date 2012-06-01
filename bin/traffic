@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require "pp"
+
+$:.unshift(File.join(File.dirname(__FILE__), "/../lib"))
+require "requestor"
+
+if ARGV.empty?
+  STDERR.puts "You need to provide a URL"
+  STDERR.puts "USAGE: #{$0} [url] [requests per minute]"
+end
+
+requestor = Requestor.new
+
+address = ARGV[0]
+requests_per_minute = ARGV.length > 1 ? ARGV[1] : 60
+
+requestor.request(address, requests_per_minute)
