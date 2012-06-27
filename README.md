@@ -18,9 +18,11 @@ In the Security Onion VM
 
 * Create a  pcap
 
+
     sudo tcpdump -w /tmp/test.pcap
 
 * View it in Wireshark
+
 
     wireshark /tmp/test.pcap
 
