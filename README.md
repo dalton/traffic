@@ -16,12 +16,12 @@ Note that the url requires the http[s] prefix.
 
 In the Security Onion VM
 
-* Create a  pcap
+First, create a  pcap
 
 
     sudo tcpdump -w /tmp/test.pcap
 
-* View it in Wireshark
+Then, view it in Wireshark
 
 
     wireshark /tmp/test.pcap
