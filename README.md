@@ -11,3 +11,17 @@ The traffix executable requires a url and optional request per minutes argument
     traffic [url] [requests per minute]
 
 Note that the url requires the http[s] prefix.
+
+# Monitoring Traffic
+
+In the Security Onion VM
+
+* Create a  pcap
+
+    sudo tcpdump -w /tmp/test.pcap
+
+* View it in Wireshark
+
+    wireshark /tmp/test.pcap
+
+
